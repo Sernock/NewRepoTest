@@ -90,7 +90,7 @@ struct key *binsearch(char *word, struct key *tab, int n)
     struct key *high = &tab[n];
     struct key *mid;
 
-    while (low < high) {
+    while (low <= high) {
         mid = low + (high - low) / 2;
         if ((cond = strcmp(word, mid->word)) < 0)
             high = mid;
