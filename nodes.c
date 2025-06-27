@@ -69,7 +69,7 @@ int getword(char *word, int lim)
 
     while (isspace(c = getch()))
     ;
-        if (c != EOF)
+    if (c != EOF)
         *w++ = c;
     if (!isalpha(c)) {
         *w = '\0';
